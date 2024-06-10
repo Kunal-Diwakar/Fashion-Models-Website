@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face {
+    font-family: "monument";
+    src: url("./Assets/MonumentExtended-Ultrabold.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(249,248,249);
+    position: relative;
+    padding-top: 0.1px;
+}
+
+.nav{
+    width: 100%;
+    height: 13vh;
+    margin-top: 35px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav h1{
+    height: 100%;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "monument";
+    font-weight: 900;
+    font-size: 2.3rem;
+    letter-spacing: -2px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.main .nav h1::after {
+    content: "©";
+    font-family: 'inter';
+    font-size: 20px;
+    font-weight: 200;
+    position: absolute;
+    top: 10%;
+    right: 6%;
+}
+
+.main .nav h1::before {
+    content: "model management";
+    font-family: 'inter';
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 8%;
+    right: 3%;
+    color: #4d4d4d;
+    letter-spacing: 0.5px;
+}
+
+.nav h2{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #000;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.nav h2:nth-last-child(1){
+    width: 10%;
+    border: none;
+    font-size: 25px;
+}
+
+.center{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    padding: 2vw 10vw;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    width: 100%;
+    height: 48%;
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+}
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(249,248,249);
+    margin-bottom: 15px;
+}
+
+#over1 h1{
+    font-weight: 900;
+    font-size: 2.8rem;
+    font-family: "monument";  
+}
+
+#over1 h2{
+    border: 1px solid rgb(249,248,249); 
+    border-radius: 50px;
+    padding: 2vw 2vw;
+}
+
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(249,248,249);
+    border-top: 2px solid #f8f8f8;
+}
+
+#over2 h4{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.scroll{
+    width: 100%;
+    height: 40vh;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 2vw;
+    animation: anime;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.container img{
+    height: 95%;
+    width: 15%;
+    border-radius: 100%;
+    border: 1px solid #c7c7c7;
+    object-fit: cover;
+    margin: 1vw;
+    object-position: 30% 30%;
+}
+
+@keyframes anime {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.alphabets{
+    width: 100%;
+    height: 10vh;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.alphabets h5{
+    font-size: 1.2rem;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4px;
+    border-bottom: 2px solid #000000;
+    margin-right: 2vw;
+    cursor: pointer;
+}
+
+.alphabets h6{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 1vw;
+    cursor: pointer;
+    padding: 0.5vw 0.3vw;
+    transition: all 0.4s linear;
+    border-radius: 50%;
+}
+
+.alphabets h6:hover{
+    border: 1px solid #000;
+    border-radius: 50%;
+    transition: all 0.4s linear;
+}
+
+.page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 5vw;
+    padding: 3vw 2vw;
+}
+
+.page2 .page2-part1 {
+    width: 60%;
+    height: 100%;
+}
+
+.page2 .page2-part1 img {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+}
+
+.page2 .page2-part2 {
+    width: 60%;
+    height: 100%;
+}
+
+.page2 .page2-part2 img {
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+.page2 .page2-part2 .box {
+    width: 90%;
+    height: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vw;
+}
+
+.page2 .page2-part2 .box h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+  
+.page2 .page2-part2 .box p {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+
+
+.shot {
+    width: 100%;
+    height: 100%;
+    padding: 3vw 4vw;
+    padding-left: 50px;
+  }
+  .shot h2 {
+    font-family: monument;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .shot .shot-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+  }
+  .shot .shot-section .rotate {
+    width: 60%;
+    text-align: center;
+  }
+  .shot .shot-section .rotate img {
+    clip-path: inset(14% 0 0 15%);
+  }
+  .shot .shot-section .rotate p {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 4vw;
+    margin-top: 17vw;
+  }
+  
+  .shot .shot-section .image {
+    width: 70%;
+    height: 100%;
+  }
+  .shot .shot-section .image img {
+    width: 90%;
+    height: 70%;
+  }
+  
+  .full-image {
+    width: 100%;
+    height: 100%;
+    padding: 1vw 4vw;
+    position: relative;
+  }
+  .full-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .full-image h5 {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 1vw;
+    position: absolute;
+    top: 3vw;
+    right: 10vw;
+    color: #f8f8f8;
+    border-radius: 50%;
+    border: 1px solid #473e3e;
+    background-color: transparent;
+  }
+  
+  .page3 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+  }
+  
+  .page3 > h1 {
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    /* font-weight: 900; */
+    margin-bottom: 7vh;
+  }
+  
+  .elem {
+    height: 15.5vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+  
+    transition: all ease 0.7s;
+  }
+  
+  .elem img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-radius: 50%;
+    left: 12%;
+    opacity: 0;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease 0.7s;
+  }
+  
+  .elem h4 {
+    font-family: monument;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 6%;
+    /* background-color: red; */
+  }
+  
+  .elem .elem-part2 {
+    width: 45%;
+    /* background-color: red; */
+  }
+  
+  .elem-part2 h1 {
+    font-size: 2.7vw;
+    font-weight: 500;
+  }
+  
+  .elem-part2 h5 {
+    font-size: 0.8vw;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .elem:nth-last-child(1) {
+    border-bottom: 2px solid #000;
+  }
+  .elem:hover {
+    background-color: #f1f1f1;
+  }
+  .elem:nth-last-child(1) img {
+    left: 40%;
+  }
+  
+  .elem:nth-last-child(3) img {
+    left: 40%;
+  }
+  
+  .elem:hover img {
+    opacity: 1;
+    left: 24%;
+  }
+  
+  .marque {
+    /* height: 15vh; */
+    width: 100%;
+    /* background-color: red; */
+    padding: 0.8vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  
+  .marque h1 {
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    letter-spacing: 3px;
+    font-family: monument;
+    /* background-color: blue; */
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes move {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
+  
